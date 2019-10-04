@@ -16,7 +16,7 @@ exports.retrieveAll = async (req, res, next) => {
 
 exports.insert = async (req, res, next) => {
     try {
-        console.log(req.body);
+        console.log(req.body.city);
         const { city } = await req.body;
         const city_object = await Cities.create({
             city_name: city,
