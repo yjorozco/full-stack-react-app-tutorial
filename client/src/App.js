@@ -91,14 +91,12 @@ export default class App extends Component {
               <Row >
                 <Col className="col-md-12">
                   <InputGroup >
-                    <Input 
+                    <Input className="input-lg"
                       placeholder="new city name.."
                       value={this.state.newCityName}
                       onChange={this.handleInputChange}
                     />
                   </InputGroup>
-                  </Col>
-                 <Col className="col-md-12"> 
                   <InputGroupAddon addonType="append">
                     <Button color="primary" onClick={this.handleAddCity}>Add City</Button>
                   </InputGroupAddon>
