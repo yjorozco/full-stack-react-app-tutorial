@@ -88,23 +88,19 @@ export default class App extends Component {
                   <p className="lead">This current weather for your favorite cities</p>
                 </Col>
               </Row>
-              <Row className="centered">
-                <Col className="col-md-4">
-                <div class="form-group">
-                    <Input 
+              <Row >
+                <Col className="col-md-4 centered">
+                <div class="form-group  w-50">
+                    <Input
                       placeholder="new city name.."
                       value={this.state.newCityName}
                       onChange={this.handleInputChange}
                     />
                  </div>
                 
-                 
+                 <Button color="primary" onClick={this.handleAddCity}>Add City</Button>
          
                 </Col>
-                <Col className="col-md-2">
-                   <Button color="primary" onClick={this.handleAddCity}>Add City</Button>
-                </Col>
-             
               </Row>
             </Jumbotron>
 
