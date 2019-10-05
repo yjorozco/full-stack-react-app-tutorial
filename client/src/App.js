@@ -96,9 +96,10 @@ export default class App extends Component {
                       value={this.state.newCityName}
                       onChange={this.handleInputChange}
                     />
+                    <Button color="primary" onClick={this.handleAddCity}>Add City</Button>
                  </div>
                 
-                 <Button color="primary" onClick={this.handleAddCity}>Add City</Button>
+                
          
                 </Col>
               </Row>
