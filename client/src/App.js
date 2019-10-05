@@ -89,9 +89,9 @@ export default class App extends Component {
                 </Col>
               </Row>
               <Row >
-                <Col className="col-md-12">
+                <Col className="col-md-8">
                   <InputGroup >
-                    <Input className="input-lg"
+                    <Input 
                       placeholder="new city name.."
                       value={this.state.newCityName}
                       onChange={this.handleInputChange}
