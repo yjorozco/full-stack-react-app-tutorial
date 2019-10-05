@@ -90,16 +90,16 @@ export default class App extends Component {
               </Row>
               <Row >
                 <Col className="col-md-8">
-                  <InputGroup >
+                <div class="form-group">
                     <Input 
                       placeholder="new city name.."
                       value={this.state.newCityName}
                       onChange={this.handleInputChange}
                     />
-                  </InputGroup>
-                  <InputGroupAddon addonType="append">
+                 </div>
+                
                     <Button color="primary" onClick={this.handleAddCity}>Add City</Button>
-                  </InputGroupAddon>
+         
                 </Col>
               </Row>
             </Jumbotron>
