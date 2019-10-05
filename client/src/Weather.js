@@ -11,7 +11,7 @@ export default function Weather(props) {
     const img = data.data.weather[0].icon;
 
     return (
-        <Row className="weathe">
+        <Row className="weather">
             <Col sm="12" md={{size:4, offset:4}}>
                 <h2>{data.data.name}</h2>
                <img src={`http://openweathermap.org/img/wn/${img}.png`} alt="weather icon"/>
