@@ -23,7 +23,7 @@ export default function Weather(props) {
                     <tbody>
                         <tr>
                             <td>wind</td>
-                            <td>{Math.floor(data.data.main.speed)}</td>
+                            <td>{Math.floor(data.data.wind.speed)}</td>
                         </tr>
                         <tr>
                             <td>Pressure</td>
