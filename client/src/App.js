@@ -89,7 +89,7 @@ export default class App extends Component {
                 </Col>
               </Row>
               <Row>
-                <Col>
+                <Col className="col-3">
                   <InputGroup>
                     <Input
                       placeholder="new city name.."
@@ -97,6 +97,8 @@ export default class App extends Component {
                       onChange={this.handleInputChange}
                     />
                   </InputGroup>
+                  </Col>
+                 <Col className="col-3"> 
                   <InputGroupAddon addonType="append">
                     <Button color="primary" onClick={this.handleAddCity}>Add City</Button>
                   </InputGroupAddon>
