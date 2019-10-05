@@ -41,7 +41,7 @@ SET default_with_oids = false;
 --
 
 CREATE TABLE public.cities (
-    id integer NOT NULL,
+    id serial NOT NULL,
     city_name character varying(50) NOT NULL
 );
 
