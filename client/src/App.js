@@ -98,12 +98,10 @@ export default class App extends Component {
                     />
                  </div>
                 
-                    
+                 <Button color="primary" onClick={this.handleAddCity}>Add City</Button>
          
                 </Col>
-                <Col className="col-md-3" >
-                   <Button color="primary" onClick={this.handleAddCity}>Add City</Button>
-                </Col>
+             
               </Row>
             </Jumbotron>
 
