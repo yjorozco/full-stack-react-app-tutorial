@@ -49,8 +49,9 @@ export default class App extends Component {
         method: 'POST', 
         body: JSON.stringify({ city: this.state.newCityName }), 
         headers:{'Content-Type': 'application/json'}});
-      this.getCityList()
       this.setState({ newCityName: '' })
+      this.getCityList()
+     // window.location.href = "/";
     } catch (e) {
       console.log(e);
     }
@@ -85,7 +86,7 @@ export default class App extends Component {
               <InputGroup>
                 <Input
                   placeholder="new city name.."
-                  valor={this.state.cityName}
+                  value={this.state.newCityName}
                   onChange={this.handleInputChange}
                 />
               </InputGroup>
