@@ -96,12 +96,11 @@ export default class App extends Component {
                       value={this.state.newCityName}
                       onChange={this.handleInputChange}
                     />
-                 </div>       
+                    
+                 </div>
+                 <Button color="primary" onClick={this.handleAddCity}>Add City</Button>       
                 </Col>
-                <Col className="col-md-2  centered">
-                   <Button color="primary" onClick={this.handleAddCity}>Add City</Button>
-                </Col>
-             
+               
               </Row>
             </Jumbotron>
 
