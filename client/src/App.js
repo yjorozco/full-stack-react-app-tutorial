@@ -90,7 +90,7 @@ export default class App extends Component {
               </Row>
               <Row >
                 <Col className="col-md-4 centered">
-                <div class="form-group  w-100">
+                <div class="form-group  px-0">
                     <Input
                       placeholder="new city name.."
                       value={this.state.newCityName}
