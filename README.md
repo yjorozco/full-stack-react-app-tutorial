@@ -14,3 +14,5 @@ DB = data base name
 HOST = ip or domain of the database
 
 the app is set to work with heroku. 
+
+I made some changes, for example I am using sequelize.
