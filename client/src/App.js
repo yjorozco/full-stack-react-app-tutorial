@@ -40,18 +40,19 @@ export default class App extends Component {
     this.setState({
       newCityName: e.target.value
     })
-  
+
   }
   handleAddCity = async (e) => {
     try {
 
       await fetch('/api/city', {
-        method: 'POST', 
-        body: JSON.stringify({ city: this.state.newCityName }), 
-        headers:{'Content-Type': 'application/json'}});
+        method: 'POST',
+        body: JSON.stringify({ city: this.state.newCityName }),
+        headers: { 'Content-Type': 'application/json' }
+      });
       this.setState({ newCityName: '' })
       this.getCityList()
-     // window.location.href = "/";
+      // window.location.href = "/";
     } catch (e) {
       console.log(e);
     }
@@ -65,8 +66,8 @@ export default class App extends Component {
       console.log(e);
     }
   }
-  handleChangeCity = (e) =>{
-      this.getWeather(e.target.value);
+  handleChangeCity = (e) => {
+    this.getWeather(e.target.value);
   }
   componentDidMount() {
     this.getCityList();
@@ -81,18 +82,26 @@ export default class App extends Component {
         <Row>
           <Col>
             <Jumbotron>
-              <h1 className="display-3">MyWeather</h1>
-              <p className="lead">This current weather for your favorite cities</p>
-              <InputGroup>
-                <Input
-                  placeholder="new city name.."
-                  value={this.state.newCityName}
-                  onChange={this.handleInputChange}
-                />
-              </InputGroup>
-              <InputGroupAddon addonType="append">
-                <Button color="primary" onClick={this.handleAddCity}>Add City</Button>
-              </InputGroupAddon>
+              <Row>
+                <Col>
+                  <h1 className="display-3">MyWeather</h1>
+                  <p className="lead">This current weather for your favorite cities</p>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <InputGroup>
+                    <Input
+                      placeholder="new city name.."
+                      value={this.state.newCityName}
+                      onChange={this.handleInputChange}
+                    />
+                  </InputGroup>
+                  <InputGroupAddon addonType="append">
+                    <Button color="primary" onClick={this.handleAddCity}>Add City</Button>
+                  </InputGroupAddon>
+                </Col>
+              </Row>
             </Jumbotron>
 
           </Col>
@@ -102,23 +111,23 @@ export default class App extends Component {
             <h1 className="display-5">Current Weather</h1>
             <FormGroup>
               <Input type="select" onChange={this.handleChangeCity}>
-                  {
-                    this.state.cityList.length === 0 && <option>No cities added yet.</option>
-                  }
-                  {
-                    this.state.cityList.length > 0 && <option>Select a city.</option>
-                  }
-                  {
-                    this.state.cityList.map((city, i) => <option key={i}>{city}</option>) 
-                  }
+                {
+                  this.state.cityList.length === 0 && <option>No cities added yet.</option>
+                }
+                {
+                  this.state.cityList.length > 0 && <option>Select a city.</option>
+                }
+                {
+                  this.state.cityList.map((city, i) => <option key={i}>{city}</option>)
+                }
 
               </Input>
             </FormGroup>
           </Col>
         </Row>
         {
-          
-         this.state.weather && <Weather data={this.state.weather} />
+
+          this.state.weather && <Weather data={this.state.weather} />
         }
       </Container>
     )
