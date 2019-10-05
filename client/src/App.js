@@ -89,7 +89,7 @@ export default class App extends Component {
                 </Col>
               </Row>
               <Row className="centered">
-                <Col className="col-md-6">
+                <Col className="col-md-4">
                 <div class="form-group">
                     <Input 
                       placeholder="new city name.."
@@ -101,7 +101,7 @@ export default class App extends Component {
                  
          
                 </Col>
-                <Col className="col-md-1">
+                <Col className="col-md-2">
                    <Button color="primary" onClick={this.handleAddCity}>Add City</Button>
                 </Col>
              
