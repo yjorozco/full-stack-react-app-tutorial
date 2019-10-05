@@ -1,11 +1,12 @@
 const Sequelize = require('sequelize');
+require('dotenv').config()
 
 let sequelize = new Sequelize(
-    'weather-db',
-    'postgres',
-    '123456',
+    process.env.DB,
+    process.env.USER_DB,
+    process.env.PASSWORD_DB,
     {
-        host: "localhost",
+        host: process.env.HOST,
         dialect:'postgres',
         pool: {
             max:5,
