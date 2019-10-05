@@ -90,7 +90,7 @@ export default class App extends Component {
               </Row>
               <Row >
             
-                <Col>
+                <Col className="w-30 px-0">
               
                     <Input className="w-25"
                       placeholder="new city name.."
