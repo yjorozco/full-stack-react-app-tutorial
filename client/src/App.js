@@ -88,7 +88,7 @@ export default class App extends Component {
                   <p className="lead">This current weather for your favorite cities</p>
                 </Col>
               </Row>
-              <Row >
+              <Row className="centered">
                 <Col className="col-md-6">
                 <div class="form-group">
                     <Input 
@@ -101,7 +101,7 @@ export default class App extends Component {
                  
          
                 </Col>
-                <Col className="col-md-2">
+                <Col className="col-md-1">
                    <Button color="primary" onClick={this.handleAddCity}>Add City</Button>
                 </Col>
              
