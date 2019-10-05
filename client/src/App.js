@@ -89,7 +89,7 @@ export default class App extends Component {
                 </Col>
               </Row>
               <Row >
-                <Col className="col-md-3">
+                <Col className="col-md-6">
                 <div class="form-group">
                     <Input 
                       placeholder="new city name.."
