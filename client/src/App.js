@@ -90,8 +90,9 @@ export default class App extends Component {
               </Row>
               <Row >
             
-                <Col className="w-30 px-0">
-              
+                <Col >
+
+                  <div className="d-flex flex-row justify-content-center">
                     <Input className="w-25"
                       placeholder="new city name.."
                       value={this.state.newCityName}
@@ -99,7 +100,7 @@ export default class App extends Component {
                     />
                     
                     <Button color="primary" onClick={this.handleAddCity}>Add City</Button>
-                        
+                  </div> 
                 </Col>
               </Row>
             </Jumbotron>
