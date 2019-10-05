@@ -90,18 +90,18 @@ export default class App extends Component {
               </Row>
               <Row >
                 <Col className="col-md-4 centered">
-                <div class="form-group  w-50">
+                <div class="form-group  w-100">
                     <Input
                       placeholder="new city name.."
                       value={this.state.newCityName}
                       onChange={this.handleInputChange}
                     />
-                    <Button color="primary" onClick={this.handleAddCity}>Add City</Button>
-                 </div>
-                
-                
-         
+                 </div>       
                 </Col>
+                <Col className="col-md-2  centered">
+                   <Button color="primary" onClick={this.handleAddCity}>Add City</Button>
+                </Col>
+             
               </Row>
             </Jumbotron>
 
