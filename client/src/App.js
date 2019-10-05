@@ -91,14 +91,14 @@ export default class App extends Component {
               <Row >
             
                 <Col>
-                <div class="form-group  px-0">
-                    <Input
+              
+                    <Input className="w-25"
                       placeholder="new city name.."
                       value={this.state.newCityName}
                       onChange={this.handleInputChange}
                     />
                     
-                 </div>
+               
                         
                 </Col>
                 <Col>
