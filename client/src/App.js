@@ -85,7 +85,7 @@ export default class App extends Component {
               <Row>
                 <Col>
                   <h1 className="display-3">MyWeather</h1>
-                  <p className="lead">This current weather for your favorite cities</p>
+                  <p className="lead">This current weather for your favorites cities</p>
                 </Col>
               </Row>
               <Row >
