@@ -89,7 +89,7 @@ export default class App extends Component {
                 </Col>
               </Row>
               <Row >
-                <Col className="col-md-4 centered">
+                <Col className="col-md-4 centered" style="justify-content: center;">
                 <div class="form-group  px-0">
                     <Input
                       placeholder="new city name.."
