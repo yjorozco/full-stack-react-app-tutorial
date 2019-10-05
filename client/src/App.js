@@ -101,7 +101,7 @@ export default class App extends Component {
                     
          
                 </Col>
-                <Col>
+                <Col className="col-md-3" >
                    <Button color="primary" onClick={this.handleAddCity}>Add City</Button>
                 </Col>
               </Row>
