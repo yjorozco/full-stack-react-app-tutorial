@@ -88,10 +88,10 @@ export default class App extends Component {
                   <p className="lead">This current weather for your favorite cities</p>
                 </Col>
               </Row>
-              <Row>
+              <Row >
                 <Col className="col-3">
-                  <InputGroup>
-                    <Input
+                  <InputGroup className="centered">
+                    <Input style="width: 100%"
                       placeholder="new city name.."
                       value={this.state.newCityName}
                       onChange={this.handleInputChange}
@@ -99,7 +99,7 @@ export default class App extends Component {
                   </InputGroup>
                   </Col>
                  <Col className="col-3"> 
-                  <InputGroupAddon addonType="append">
+                  <InputGroupAddon addonType="append" className="centered">
                     <Button color="primary" onClick={this.handleAddCity}>Add City</Button>
                   </InputGroupAddon>
                 </Col>
